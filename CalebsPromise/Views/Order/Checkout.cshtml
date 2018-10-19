@@ -1,0 +1,57 @@
+﻿@model Order
+
+<div class="container-fluid p-5 m-5">
+    <div class="col-6 border border-secondary p-5 mt-5">
+        <h2>Check out now</h2>
+        <p class="text-center">Please enter your details, and we'll ship your goods right away!</p>
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <form asp-action="Checkout" method="post">
+        <h3>Ship to</h3>
+        <div class="form-group">
+        <label>Name:</label><input asp-for="Name" class="form-cotrol" />
+        </div>
+
+        <h3>Address</h3>
+        <div class="form-group">
+        <label>Line1:</label><input asp-for="Line1" class="form-cotrol" />
+        </div>
+
+        <div class="form-group">
+        <label>Line2:</label><input asp-for="Line2" class="form-cotrol" />
+        </div>
+
+        <div class="form-group">
+        <label>Line3:</label><input asp-for="Line3" class="form-cotrol" />
+        </div>
+
+        <div class="form-group">
+        <label>City:</label><input asp-for="City" class="form-cotrol" />
+        </div>
+
+        <div class="form-group">
+        <label>State:</label><input asp-for="State" class="form-cotrol" />
+        </div>
+
+        <div class="form-group">
+        <label>Zip:</label><input asp-for="Zip" class="form-cotrol" />
+        </div>
+
+        <div class="form-group">
+        <label>Country:</label><input asp-for="Country" class="form-cotrol" />
+        </div>
+
+        <h3>Options</h3>
+        <div class="checkbox">
+        <label>
+        <input asp-for="Giftwrap" /> Gift wrap hese items
+        </label>
+        </div>
+
+        <div class="text-center">
+        <input class="btn btn-dark" type="submit" value="Complete Order" />
+        </div>
+        </form>
+    </div>
+</div>

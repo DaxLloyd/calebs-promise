@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>ebe0aa6a-dcb5-4112-ae45-599ebbb4f827</UserSecretsId>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+    <ApplicationIcon />
+    <OutputType>WinExe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>
