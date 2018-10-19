@@ -6,6 +6,7 @@ migrations/
 appsettings.json
 launchSettings.json
 appsettings.production.json
+Properties/
 
 
 # User-specific files
